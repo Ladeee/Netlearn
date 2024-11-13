@@ -1,0 +1,108 @@
+.signup-container {
+  background-color: #F8F9FA;
+  height: 85vh;
+  padding-top: 3rem;
+}
+
+.signup-wrapper{
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 36.25rem;
+}
+
+.logo-container {
+  height: 5rem;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding-left: 3rem;
+}
+
+.signup-logo {
+  cursor: pointer;
+  width: 10.125rem;
+  height: 2.1544rem;
+}
+
+.type{
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.choice{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.choice-box {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 1.125rem;
+  width: 37.5rem;
+  height: 8.75rem;
+  border-radius: .8125rem;
+}
+
+.empower{
+  color: #313189;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.elevate{
+  color: #5959F9;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.avatar,
+.company {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.heading{
+  color: #2D3036;
+  font-size: 1.5rem;
+}
+
+.sign-text{
+  color:#6B7280;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: .25rem /* 4px -> .25rem */;
+}
+
+.account{
+  text-align: center;
+  color: #616874;
+  font-weight: 400;
+
+  .span{
+    cursor: pointer;
+    font-weight: 500;
+    color:#5959F9 !important;
+  }
+}
+
+
+// signup button
+
+.signup-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #5151E3 0%, #2D2D7D 100%);
+  width: 20rem;
+  height: 3.5rem;
+  border-radius: .5rem;
+}
