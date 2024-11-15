@@ -41,11 +41,16 @@ export default function Email() {
 
         <div className="email-account">
           <div className="account">
-            Already have an account? <span className="span">Sign in</span>
+            Already have an account?{' '}
+            <Link to="/welcome" className="link">
+              <span className="span">Sign in</span>
+            </Link>
           </div>
           <div className="account" id="start">
             Want to sign up as an organization?{' '}
-            <span className="span">Start here</span>
+            <Link to="/individual" className="link">
+              <span className="span">Start here</span>
+            </Link>
           </div>
         </div>
       </div>
