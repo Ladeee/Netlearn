@@ -1,6 +1,6 @@
 import { Button, Card, Checkbox, Form, Input } from 'antd'
 import '../signup/email/email.scss'
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import SignupNavbar from '../signup/signupNavbar'
 
@@ -10,7 +10,7 @@ import SignupNavbar from '../signup/signupNavbar'
 // }
 
 export default function Welcome() {
-  const [password] = useState('')
+  // const [password] = useState('')
 
   return (
     <>
@@ -36,7 +36,7 @@ export default function Welcome() {
               <Input.Password
                 placeholder="Create your password"
                 className="password-input"
-                value={password}
+                // value={password}
               />
             </Form.Item>
 

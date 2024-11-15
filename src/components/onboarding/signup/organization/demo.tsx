@@ -120,7 +120,9 @@ export default function Demo() {
 
         <div className="start-acc">
           Want to sign up as an individual?{' '}
-          <span className="acc-span">Start here</span>
+          <Link to="/individual" className="link">
+            <span className="acc-span">Start here</span>
+          </Link>
         </div>
       </div>
     </>
