@@ -77,7 +77,7 @@ export default function Demo() {
               </Form.Item>
             </div>
 
-            <div className="country-special">
+            <div className="select-correction">
               <Form.Item
                 layout="vertical"
                 label="Organization's country"

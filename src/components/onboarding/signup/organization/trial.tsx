@@ -108,7 +108,7 @@ export default function Trial() {
               </Form.Item>
             </div>
 
-            <div className="country-special">
+            <div className="select-correction">
               <Form.Item
                 layout="vertical"
                 label="Organization's country"
@@ -123,6 +123,7 @@ export default function Trial() {
               </Form.Item>
             </div>
 
+            <div className="select-correction">
             <Form.Item
               layout="vertical"
               label="How do you expect to use the app"
@@ -132,6 +133,7 @@ export default function Trial() {
                 <Option value="admin">app</Option>
               </Select>
             </Form.Item>
+            </div>
 
             <Form.Item
               layout="vertical"
