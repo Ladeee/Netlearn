@@ -77,18 +77,20 @@ export default function Demo() {
               </Form.Item>
             </div>
 
-            <Form.Item
-              layout="vertical"
-              label="Organization's country"
-              className="country"
-            >
-              <Select
-                placeholder="Select organization's country"
-                className="select"
+            <div className="country-special">
+              <Form.Item
+                layout="vertical"
+                label="Organization's country"
+                className="country"
               >
-                <Option value="admin">country</Option>
-              </Select>
-            </Form.Item>
+                <Select
+                  placeholder="Select organization's country"
+                  className="select"
+                >
+                  <Option value="admin">country</Option>
+                </Select>
+              </Form.Item>
+            </div>
 
             <Form.Item
               className="textarea-box"
