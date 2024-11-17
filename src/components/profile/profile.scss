@@ -1,0 +1,59 @@
+// profile
+
+
+// email-password
+.empass-container{
+  .ant-form-item .ant-form-item-label > label{
+    color: #4C515B !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+  }
+
+.p-input-display{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.profile-input{
+  width: 27.0625rem /* 433px -> 27.0625rem */ !important;
+}
+
+.p-form-item{
+  margin-top: 4.25rem !important;
+
+  Button{
+    background: linear-gradient(180deg, #5151E3 0%, #2D2D7D 100%);
+    font-size: 1.125rem !important;
+    font-weight: 500 !important;
+    margin-top: 2rem;
+    width: 11.25rem /* 180px -> 11.25rem */ !important;
+    height: 2.75rem /* 44px -> 2.75rem */ !important;
+  }
+}
+
+#p-border{
+  border-bottom: .0625rem solid #E0E1E4;
+  width: 55.375rem /* 886px -> 55.375rem */;
+  // padding-bottom: 1.5rem;
+}
+
+#change-pass{
+  margin-top: 1.5rem;
+}
+
+.p-forgot{
+  color: #7A7AFA;
+  margin-top: 1.375rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.change{
+  margin-bottom: .75rem;
+}
+
+.p-pass{
+  margin-top: 1.25rem;
+}
+}
