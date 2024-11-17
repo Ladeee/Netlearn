@@ -1,0 +1,112 @@
+.account-container {
+  .a-heading {
+    color: #121212;
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+
+  #acc-hr {
+    padding-bottom: 1.75rem /* 28px -> 1.75rem */ !important;
+  }
+
+  .accs-wrapper {
+    margin-top: 0.75rem;
+  }
+
+  .accs {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.0625rem solid #e0e1e4;
+    padding-bottom: 1rem;
+    width: 55.375rem /* 886px -> 55.375rem */;
+    margin-bottom: 1.125rem;
+  }
+
+  .a-img-text {
+    width: 41.5rem /* 664px -> 41.5rem */;
+  }
+
+  .a-icon-name {
+    color: #2d3036;
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+
+  .a-text {
+    color: #616874;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  .linkedin {
+    width: 2.75rem /* 44px -> 2.75rem */;
+    height: 2.3213rem /* 37.14px -> 2.3213rem */;
+  }
+
+  .a-icon {
+    width: 2.75rem /* 44px -> 2.75rem */;
+    height: 2.75rem /* 44px -> 2.75rem */;
+  }
+
+  .a-img-text {
+    margin-left: 1rem;
+  }
+
+  .a-btn {
+    margin-left: 0.75rem;
+
+    Button {
+      width: 9.375rem /* 150px -> 9.375rem */ !important;
+      height: 2.5rem !important;
+      border-radius: 0.5rem /* 8px -> .5rem */ !important;
+      font-weight: 400 !important;
+      font-size: 1rem !important;
+
+      &:hover {
+        background: inherit !important;
+      }
+    }
+  }
+
+  .a-active {
+    background-color: #eaebed;
+    color: #3b3f46 !important;
+  }
+
+  .a-unactive {
+    color: #5959f9 !important;
+    border: 0.075rem solid #5959f9 !important;
+  }
+
+  .account-actions {
+    margin-top: 0.375rem /* 6px -> .375rem */;
+
+    #left-actions {
+      margin-left: unset;
+      width: 45.25rem /* 724px -> 45.25rem */;
+
+      .a-text {
+        white-space: nowrap;
+      }
+    }
+
+    #accs {
+      display: flex;
+      gap: 0.75rem;
+      padding-bottom: 1.25rem;
+    }
+
+    #act-padd {
+      margin-top: 0.75rem;
+    }
+
+    .a-btn {
+      margin-left: unset;
+    }
+  }
+
+  .delete-btn {
+    color: #e32e2e !important;
+    border: 0.075rem solid #e32e2e !important;
+  }
+}
