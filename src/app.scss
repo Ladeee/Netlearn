@@ -33,9 +33,14 @@ Button {
   color: #ffffff !important;
   height: 3.5rem !important;
   font-size: 1.25rem !important;
+  width: 20rem;
 
   &:hover {
-    background: linear-gradient(180deg, #5151e3 0%, #2d2d7d 100%) !important;
+    background: #5151e3 !important;
+  }
+
+  @media (max-width: 760px) {
+    font-size: .875rem !important;
   }
 }
 
@@ -46,8 +51,16 @@ Button {
   outline: none !important;
   border: none !important;
   border-radius: 0.375rem !important;
-  width: 36.625rem /* 586px -> 36.625rem */ !important;
+  width: 34.5rem /* 552px -> 34.5rem */ !important;
   height: 3.4375rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  @media (max-width: 760px) {
+    width: 19.4375rem /* 311px -> 19.4375rem */ !important;
+    height: 2.75rem /* 44px -> 2.75rem */ !important;
+  }
 }
 
 .ant-select-selector {
@@ -57,19 +70,31 @@ Button {
   border-radius: 0.375rem !important;
   height: 3.4375rem !important;
   font-size: 1rem !important;
-  width: 17.8125rem /* 285px -> 17.8125rem */ !important;
+  // width: 16.75rem /* 268px -> 16.75rem */ !important;
+
+  @media (max-width: 760px) {
+    height: 2.75rem /* 44px -> 2.75rem */ !important;
+  }
 }
 
 .ant-form-item .ant-form-item-label > label {
   color: #4c515b !important;
   font-weight: 400 !important;
   font-size: 1rem !important;
+
+  @media (max-width: 760px) {
+    font-size: .875rem !important;
+  }
 }
 
 .ant-input::placeholder {
   color: #898e99 !important;
   font-weight: 400 !important;
   font-size: 1rem !important;
+
+  @media (max-width: 760px) {
+    font-size: .875rem !important;
+  }
 }
 
 .ant-card .ant-card-body {
@@ -82,8 +107,13 @@ Button {
   box-shadow: 0rem 0.625rem 1rem 0rem #14253f0f,
     0rem 0rem 0.0625rem 0rem #0c1a4b1a !important;
   border-radius: 1.125rem !important;
-  padding: 2rem !important;
-  width: 40.625rem /* 650px -> 40.625rem */;
+  padding: 1.5rem !important;
+  width: 37.5rem /* 600px -> 37.5rem */;
+
+  @media (max-width: 760px) {
+    width: 21.4375rem /* 343px -> 21.4375rem */;
+    padding: 1.25rem !important;
+  }
 }
 
 .link {
@@ -92,4 +122,14 @@ Button {
 
 .ant-select-arrow {
   font-size: 1rem !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #5151e3 !important;
+}
+
+.ant-form-item{
+  @media (max-width: 760px) {
+    margin-bottom: .75rem !important;
+  }
 }
