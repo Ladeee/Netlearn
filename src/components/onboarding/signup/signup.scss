@@ -91,7 +91,6 @@
 }
 
 .menu {
-  display: none;
   @media (max-width: 760px) {
     display: flex;
     align-items: center;
@@ -100,6 +99,7 @@
 }
 
 .menu-icon{
+  display: none;
   @media (max-width: 760px) {
     width: 1.375rem /* 22px -> 1.375rem */;
     height: 1.375rem /* 22px -> 1.375rem */;
