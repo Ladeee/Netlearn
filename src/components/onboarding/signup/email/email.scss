@@ -346,6 +346,10 @@
     color: #3f3fb1;
     font-size: 1rem;
     font-weight: 400;
+
+    @media (max-width: 760px) {
+      font-size: .875rem;
+    }
   }
 }
 
@@ -384,9 +388,4 @@
     margin-top: 1rem;
     font-size: .9375rem /* 15px -> .9375rem */;
   }
-}
-
-.navbar{
-  background-color: white !important;
-  z-index: 99 !important;
 }
