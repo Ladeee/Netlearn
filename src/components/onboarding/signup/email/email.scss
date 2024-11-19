@@ -1,9 +1,8 @@
 .email-container {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 85vh;
   padding-top: 3rem;
 }
 
@@ -43,7 +42,7 @@
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75rem;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 
   #email-span {
     color: #3b3f46 !important;
@@ -51,253 +50,342 @@
   }
 }
 
-.resend {
-  text-align: center;
+// account
+.next-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem /* 8px -> .5rem */;
+  margin-top: 0.5rem /* 8px -> .5rem */;
+  // margin-bottom: 1.5rem;
+
+  .steps {
+    cursor: pointer;
+    background: #eaebed;
+    width: 17rem /* 272px -> 17rem */;
+    height: 0.3125rem /* 5px -> .3125rem */;
+
+    @media (max-width: 760px) {
+      width: 9.4688rem /* 151.5px -> 9.4688rem */;
+      height: 0.1875rem /* 3px -> .1875rem */;
+    }
+  }
+}
+
+.active-steps {
+  background: #121212;
+  width: 17rem /* 272px -> 17rem */;
+  height: 0.3125rem /* 5px -> .3125rem */;
+
+  @media (max-width: 760px) {
+    width: 9.4688rem /* 151.5px -> 9.4688rem */;
+    height: 0.1875rem /* 3px -> .1875rem */;
+  }
+}
+
+.step-step {
   color: #3b3f46;
-  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  @media (max-width: 760px) {
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+  }
 }
 
-.email-account {
-}
-
-#start {
-  margin-top: 2rem;
-}
-
-// verify
-.verify-container {
-  background-color: #F8F9FA;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 85vh;
-  padding-top: 3rem;
-}
-
-.verify-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40.625rem;
-  height: 28.8125rem;
-  border-radius: 1.125rem;
-  background-color: #fefefe;
-  gap: 2rem;
-  padding: 2rem 0;
-  margin-bottom: 3.5rem;
-}
-
-.email-icon {
-  width: 12.4375rem;
-  height: 12.4375rem;
-}
-
-// individual
-#reset-wrapper{
-  height: 85vh;
-}
-
-#reset-wrapper{
+.individual-wrapper {
+  margin-bottom: 3rem;
 }
 
 .individual-container {
-  background-color: #F8F9FA;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3rem;
 }
 
 .ind-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0 !important;
 
   Button {
     margin-top: 3rem !important;
-    background: linear-gradient(180deg, #5151e3 0%, #2d2d7d 100%);
-    width: 20rem;
+    background: #5151e3;
+
+    @media (max-width: 760px) {
+      width: 19.4375rem /* 311px -> 19.4375rem */;
+      height: 2.75rem /* 44px -> 2.75rem */ !important;
+      margin-top: 2rem !important;
+    }
   }
 }
 
-  .ind-form {
-    margin-top: 2rem;
-    display: flex;
+.ind-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (max-width: 760px) {
+    margin-top: 1.25rem;
+    gap: 0;
+  }
+}
+
+.pass-margin {
+  .ant-input {
+    height: 100% !important;
+  }
+}
+
+.ind-password {
+  .ant-input {
+    height: 100% !important;
+  }
+}
+
+.org {
+  margin-top: 0.625rem;
+}
+
+.ind-heading {
+  color: #252569;
+  font-weight: 500;
+  font-size: 2.25rem /* 36px -> 2.25rem */;
+
+  @media (max-width: 760px) {
+    font-size: 1.75rem /* 28px -> 1.75rem */;
+  }
+}
+
+.ind-text {
+  white-space: nowrap;
+  color: #252569;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: 0.625rem;
+
+  @media (max-width: 760px) {
+    font-size: 1rem;
+    margin-top: 0.375rem /* 6px -> .375rem */;
+    white-space: normal;
+
+    br {
+      display: none !important;
+    }
+  }
+}
+
+#dep-title {
+  margin-top: 0.625rem !important;
+
+  @media (max-width: 760px) {
+    margin-top: 0 !important;
+  }
+}
+
+.input-display {
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 760px) {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0;
   }
 
-  .pass-margin {
-    .ant-input {
-      height: 100% !important;
+  Input,
+  .select {
+    max-width: 16.75rem /* 268px -> 16.75rem */ !important;
+    width: 100%;
+
+    @media (max-width: 760px) {
+      max-width: 19.4375rem /* 311px -> 19.4375rem */ !important;
     }
   }
+}
 
-  .ind-password {
-    margin-top: 0.625rem !important;
-    .ant-input {
-      height: 100% !important;
-    }
+.password-requirements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem /* 6px -> .375rem */;
+  margin-top: 0.75rem;
+
+  @media (max-width: 760px) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.req-display {
+  display: flex;
+  gap: 0.375rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 300;
+
+  @media (max-width: 760px) {
+    font-size: 0.8125rem /* 13px -> .8125rem */;
   }
 
-  .org {
-    margin-top: 0.625rem;
+  .minus,
+  .green-check {
+    cursor: pointer;
+    width: 0.875rem;
+    height: 0.875rem;
+    margin-top: 0.25rem;
   }
 
-  .ind-heading {
-    text-align: center;
-    color: #000000;
-    font-size: 1.875rem /* 30px -> 1.875rem */;
+  .req-texts {
+    color: #136c34;
+  }
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem /* 8px -> .5rem */;
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-top: 1.25rem;
+
+  @media (max-width: 760px) {
+    margin-top: 1rem;
   }
 
-  .ind-text {
-    white-space: nowrap;
-    text-align: center;
+  .checkbox {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    border: 0.0938rem solid#D0D5DD !important;
+    border-radius: 0.25rem /* 4px -> .25rem */;
+  }
+
+  .agree-texts {
     color: #616874;
-    font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin-top: 0.875rem;
-  }
+    font-weight: 400;
 
-  #dep-title {
-    margin-top: 0.625rem !important;
-  }
-
-  .input-display {
-    display: flex;
-    gap: 1rem;
-
-    Input,
-    .select {
-      max-width: 17.8125rem !important;
-      width: 100%;
+    @media (max-width: 760px) {
+      font-size: 0.8125rem /* 13px -> .8125rem */ !important;
     }
   }
 
-  .password-requirements {
-    display: flex;
-    flex-direction: column;
-    gap: 0.375rem /* 6px -> .375rem */;
-    margin-top: 0.75rem;
-  }
+  .agree-span {
+    color: #5959f9;
+    font-weight: 500;
 
-  .req-display {
-    display: flex;
-    gap: 0.375rem;
-    color: #6b7280;
-    font-size: 0.875rem;
-    font-weight: 300;
-
-    .minus,
-    .green-check {
-      cursor: pointer;
-      width: 0.875rem;
-      height: 0.875rem;
-      margin-top: 0.25rem;
-    }
-
-    .req-texts {
-      color: #136c34;
+    @media (max-width: 760px) {
+      font-size: 0.875rem;
     }
   }
+}
 
-  .agreement {
+.free-text {
+  color: #4c515b;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.ind-account {
+  text-align: center;
+  color: #616874;
+  font-weight: 400;
+  margin-top: 1.25rem;
+
+  @media (max-width: 760px) {
+    margin-top: 1rem;
+  }
+}
+
+.start-acc {
+  color: #616874;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.acc-span {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.textarea-box {
+  height: 8.6875rem /* 139px -> 8.6875rem */ !important;
+  margin-top: 0.625rem;
+
+  .ant-input {
+    padding-left: 1rem !important;
+    border-radius: 0.375rem !important;
+    background-color: #f8f9fa !important;
+    border: none !important;
+    outline: none !important;
+    height: 8.6875rem /* 139px -> 8.6875rem */ !important;
+    overflow: auto !important;
+    resize: none !important;
+  }
+}
+.country {
+  margin-top: 0.625rem;
+}
+
+.remember-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+
+  .remember {
     display: flex;
     align-items: center;
+    color: #101928;
     gap: 0.5rem /* 8px -> .5rem */;
     font-size: 0.875rem;
-    margin-top: 1rem;
-
-    .checkbox {
-      width: 1.25rem !important;
-      height: 1.25rem !important;
-      border: 0.0938rem solid#D0D5DD !important;
-      border-radius: 0.25rem /* 4px -> .25rem */;
-    }
-    
-    .agree-texts {
-      color: #4c515b;
-      font-weight: 400;
-    }
-
-    .agree-span {
-      color: #5959f9;
-    }
-  }
-
-  .free-text {
-    color: #4c515b;
     font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
-  .ind-account {
-    color: #616874;
+  .rem-forgot {
+    cursor: pointer;
+    color: #3f3fb1;
+    font-size: 1rem;
     font-weight: 400;
-    margin-top: 3.5rem;
-    margin-bottom: 1rem;
 
-    .acc-span {
-      cursor: pointer;
-      color: #5959f9;
-      font-weight: 500;
-    }
-  }
-
-  .start-acc {
-    color: #616874;
-    font-weight: 400;
-    margin-bottom: 1rem;
-
-    .acc-span {
-      cursor: pointer;
-      color: #5959f9;
-      font-weight: 500;
-    }
-  }
-
-  .textarea-box {
-    height: 8.6875rem /* 139px -> 8.6875rem */ !important;
-    margin-top: .625rem;
-
-    .ant-input {
-      padding-left: 1rem !important;
-      border-radius: 0.375rem !important;
-      background-color: #f8f9fa !important;
-      border: none !important;
-      outline: none !important;
-      height: 8.6875rem /* 139px -> 8.6875rem */ !important;
-      overflow: auto !important;
-      resize: none !important;
-    }
-  }
-  .country{
-    margin-top: .625rem;
-  }
-
-  .remember-wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-
-    .remember{
-      display: flex;
-      align-items: center;
-      color: #101928;
-      gap: .5rem /* 8px -> .5rem */;
+    @media (max-width: 760px) {
       font-size: .875rem;
-      font-weight: 400;
-    }
-
-    .rem-forgot{
-      cursor: pointer;
-      color: #7A7AFA;
-      font-size: 1rem;
-      font-weight: 400;
     }
   }
+}
+
+.select-correction {
+  .ant-select-selector {
+    width: 36.625rem !important;
+  }
+}
+
+// forgot
+#not-mobile {
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
+.mobile-text {
+  display: none;
+
+  @media (max-width: 760px) {
+    display: block;
+    color: #252569;
+    font-weight: 400;
+    margin-top: 0.375rem /* 6px -> .375rem */;
+    font-size: 1rem;
+  }
+}
+
+.login {
+  text-align: center;
+  color: #121212;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+
+  @media (max-width: 760px) {
+    margin-top: 1rem;
+    font-size: .9375rem /* 15px -> .9375rem */;
+  }
+}

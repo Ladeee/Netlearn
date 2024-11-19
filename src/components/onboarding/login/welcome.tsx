@@ -1,42 +1,38 @@
-import { Button, Card, Checkbox, Form, Input } from 'antd'
+import { Button, Checkbox, Form, Input } from 'antd'
 import '../signup/email/email.scss'
-// import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import SignupNavbar from '../signup/signupNavbar'
+import Signup from '../signup'
 
-// type FormType = {
-//   email?: string
-//   password?: string
-// }
+type FormType = {
+  email?: string
+  password?: string
+}
 
 export default function Welcome() {
-  // const [password] = useState('')
+  const handleFinish = (values: FormType) => {
+    console.log('Form Values:', values)
+  }
 
   return (
-    <>
-      <SignupNavbar />
-      <div className="individual-container" id="reset-wrapper">
-        <Card className="individual-wrapper" id="card">
-          <h2 className="ind-heading">Welcome Back!</h2>
+    <div className="welcome-container">
+      <Signup>
+        <div className="individual-container">
+          <h2 className="ind-heading">Log in to Netlearn</h2>
 
-          <Form className="ind-form">
-            <Form.Item
-              className="org"
-              layout="vertical"
-              label="Work email address"
-            >
-              <Input placeholder="e.g example@gmail.com" />
+          <Form className="ind-form" onFinish={handleFinish}>
+            <Form.Item layout="vertical" label="Email address" name="email">
+              <Input placeholder="e.g example@gmail.com" type="email" />
             </Form.Item>
 
             <Form.Item
               layout="vertical"
               label="Password"
               className="ind-password"
+              name="password"
             >
               <Input.Password
                 placeholder="Create your password"
                 className="password-input"
-                // value={password}
               />
             </Form.Item>
 
@@ -53,19 +49,12 @@ export default function Welcome() {
 
             <Form.Item className="ind-btn" label={null}>
               <Button type="primary" htmlType="submit" className="rem-btn">
-                Sign in
+                Log in
               </Button>
             </Form.Item>
           </Form>
-        </Card>
-
-        <div className="ind-account">
-          Don't have an account?{' '}
-          <Link to="/individual" className="link">
-            <span className="acc-span">Create account</span>
-          </Link>
         </div>
-      </div>
-    </>
+      </Signup>
+    </div>
   )
 }

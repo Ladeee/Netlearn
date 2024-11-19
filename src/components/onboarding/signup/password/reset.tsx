@@ -1,14 +1,15 @@
 import Minus from '../../../../assets/minus.png'
 import Greencheck from '../../../../assets/greencheck.png'
-import { Button, Card, Form, Input } from 'antd'
-import '../email/email.scss'
+import { Button, Form, Input } from 'antd'
 import { useState } from 'react'
-import SignupNavbar from '../signupNavbar'
+import { Link } from 'react-router-dom'
+import '../email/email.scss'
+import Signup from '..'
 
-// type FormType = {
-//   password?: string
-//   confirmPassword?: string
-// }
+type FormType = {
+  password?: string
+  confirmPassword?: string
+}
 
 export default function Reset() {
   const [password, setPassword] = useState('')
@@ -38,19 +39,18 @@ export default function Reset() {
     setPasswordMatch(value === password)
   }
 
+  const handleFinish = (values: FormType) => {
+    console.log('Form Values:', values)
+  }
+
   return (
-    <>
-      <SignupNavbar />
-      <div className="individual-container" id="reset-wrapper">
-        <Card className="reset-wrapper" id="card">
+    <div className="reset-container">
+      <Signup>
+        <div className="individual-container">
           <h2 className="ind-heading">Reset your Password</h2>
 
-          <Form className="ind-form">
-            <Form.Item
-              layout="vertical"
-              label="Password"
-              className="ind-password"
-            >
+          <Form className="ind-form" onFinish={handleFinish}>
+            <Form.Item layout="vertical" label="Password" name="password">
               <Input.Password
                 placeholder="Create new password"
                 className="password-input"
@@ -104,6 +104,7 @@ export default function Reset() {
               className="pass-margin"
               layout="vertical"
               label="Confirm password"
+              name="confirmPassword"
             >
               <Input.Password
                 placeholder="Confirm your new password"
@@ -113,14 +114,18 @@ export default function Reset() {
               />
             </Form.Item>
 
-            <Form.Item className="ind-btn" label={null}>
+            <Form.Item className="ind-btn" label={null} id="reset-btn">
               <Button type="primary" htmlType="submit">
                 Reset Password
               </Button>
             </Form.Item>
           </Form>
-        </Card>
-      </div>
-    </>
+
+          <Link to="/welcome" className="link">
+            <p className="login">Back to Login</p>
+          </Link>
+        </div>
+      </Signup>
+    </div>
   )
 }
