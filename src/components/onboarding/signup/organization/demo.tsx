@@ -1,7 +1,7 @@
 import { Button, Card, Form, Input, Select } from 'antd'
-import '../email/email.scss'
 import SignupNavbar from '../signupNavbar'
 import { Link } from 'react-router-dom'
+import '../email/email.scss'
 
 // type FormType = {
 //   firstName?: string

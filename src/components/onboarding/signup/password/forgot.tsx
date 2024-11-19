@@ -1,51 +1,50 @@
-import { Button, Card, Form, Input } from 'antd'
+import { Button, Form, Input } from 'antd'
+import { Link, useNavigate } from 'react-router-dom'
+import Signup from '..'
 import '../email/email.scss'
-import SignupNavbar from '../signupNavbar'
-import { Link } from 'react-router-dom'
 
-// type FormType = {
-//   email?: string
-// }
+type FormType = {
+  email?: string
+}
 
 export default function Forgot() {
+  const navigate = useNavigate()
+
+  const handleFinish = (values: FormType) => {
+    console.log('Form Values:', values)
+    navigate('/reset')
+  }
+
   return (
-    <>
-      <SignupNavbar />
-      <div className="individual-container" id="reset-wrapper">
-        <Card className="individual-wrapper" id="card">
+    <div className="forgot-container">
+      <Signup>
+        <div className="individual-container">
           <h2 className="ind-heading">Forgot your Password</h2>
-          <p className="ind-text">
+          <p className="ind-text" id="not-mobile">
             Simply enter the email address associated with your account and
             we'll <br />
             send you an email with instructions on how to reset your password.
           </p>
 
-          <Form className="ind-form">
-            <Form.Item
-              className="org"
-              layout="vertical"
-              label="Work email address"
-            >
+          <p className="mobile-text">Enter your email to reset your password</p>
+
+          <Form className="ind-form" onFinish={handleFinish}>
+            <Form.Item layout="vertical" label="Email" name="email">
               <Input placeholder="e.g example@gmail.com" />
             </Form.Item>
 
-            <Link to="/verify" className="link">
-              <Form.Item className="ind-btn" label={null}>
-                <Button type="primary" htmlType="submit">
-                  Verify Email
-                </Button>
-              </Form.Item>
-            </Link>
+            <Form.Item className="ind-btn" label={null}>
+              <Button type="primary" htmlType="submit">
+                Reset Password
+              </Button>
+            </Form.Item>
           </Form>
-        </Card>
 
-        <Link to="/welcome" className="link">
-          <div className="ind-account">
-            {' '}
-            <span className="acc-span">Back to Login</span>
-          </div>
-        </Link>
-      </div>
-    </>
+          <Link to="/welcome" className="link">
+            <p className="login">Back to Login</p>
+          </Link>
+        </div>
+      </Signup>
+    </div>
   )
 }
