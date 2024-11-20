@@ -7,7 +7,7 @@ import Notification from '../notification/notification'
 import './profilebar.scss'
 
 export default function ProfileBar() {
-  const [activeSection, setActiveSection] = useState('account')
+  const [activeSection, setActiveSection] = useState('profile')
 
   const HandleProfile = (section: string) => {
     setActiveSection(section)
@@ -18,7 +18,7 @@ export default function ProfileBar() {
       <div className="profilebar-wrapper">
         <div className="switch-text">
           {/* {profile ? ( */}
-          <h2 className="settings">Settings</h2>
+          <h2 className="settings">Invite new user</h2>
           {/* ) : ( */}
           {/* <h2 className="settings">Invite new user</h2> */}
           {/* )} */}
@@ -35,16 +35,16 @@ export default function ProfileBar() {
             My profile
           </p>
           <p
-            onClick={() => HandleProfile('emailPassword')}
-            className={`${activeSection === 'emailPassword' && 'hover'}`}
+            onClick={() => HandleProfile('password')}
+            className={`${activeSection === 'password' && 'hover'}`}
           >
-            Email & Password
+            Password
           </p>
           <p
             onClick={() => HandleProfile('account')}
             className={`${activeSection === 'account' && 'hover'}`}
           >
-            Account integration
+            Third-party Integrations
           </p>
           <p
             onClick={() => HandleProfile('notification')}
@@ -57,7 +57,7 @@ export default function ProfileBar() {
 
       <div className="profile-display">
         {activeSection === 'profile' && <Profile />}
-        {activeSection === 'emailPassword' && <Emailpassword />}
+        {activeSection === 'password' && <Emailpassword />}
         {activeSection === 'account' && <Account />}
         {activeSection === 'notification' && <Notification />}
       </div>

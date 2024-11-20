@@ -7,6 +7,7 @@ import Reset from './components/onboarding/signup/password/reset'
 import Payment from './components/onboarding/signup/organization/payment'
 import Netlearn from './components/onboarding/signup/email/netlearn'
 import './app.scss'
+import ProfileBar from './components/profile/profilebar'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/demo" element={<Demo />} />
           <Route path="/reset" element={<Reset />} />
           <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<ProfileBar />} />
         </Routes>
       </BrowserRouter>
     </div>

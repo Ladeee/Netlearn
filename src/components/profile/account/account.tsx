@@ -51,7 +51,7 @@ export default function Account() {
                   linkedAccounts.linkedin ? 'a-active' : 'a-unactive'
                 }`}
               >
-                {linkedAccounts.linkedin ? 'Unlink account' : 'Link account'}
+                {linkedAccounts.linkedin ? 'Connected' : 'Connect'}
               </Button>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function Account() {
                   linkedAccounts.twitter ? 'a-active' : 'a-unactive'
                 }`}
               >
-                {linkedAccounts.twitter ? 'Unlink account' : 'Link account'}
+                {linkedAccounts.twitter ? 'Connected' : 'Connect'}
               </Button>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Account() {
                   linkedAccounts.google ? 'a-active' : 'a-unactive'
                 }`}
               >
-                {linkedAccounts.google ? 'Unlink account' : 'Link account'}
+                {linkedAccounts.google ? 'Connected' : 'Connect'}
               </Button>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Account() {
                   linkedAccounts.gmail ? 'a-active' : 'a-unactive'
                 }`}
               >
-                {linkedAccounts.gmail ? 'Unlink account' : 'Link account'}
+                {linkedAccounts.gmail ? 'Connected' : 'Connect'}
               </Button>
             </div>
           </div>
@@ -127,45 +127,8 @@ export default function Account() {
                   linkedAccounts.outlook ? 'a-active' : 'a-unactive'
                 }`}
               >
-                {linkedAccounts.outlook ? 'Unlink account' : 'Link account'}
+                {linkedAccounts.outlook ? 'Connected' : 'Connect'}
               </Button>
-            </div>
-          </div>
-        </div>
-
-        <div className="account-actions">
-          <p className="a-heading">Account actions</p>
-          <div className="accs" id="accs">
-            <div className="a-img-text" id="left-actions">
-              <p className="a-icon-name" id="act-padd">
-                Pause account
-              </p>
-              <p className="a-text">
-                Temporarily disable your account and pause your active
-                subscription. You will not have access to your <br />
-                account until it is unpaused, but your data and settings will be
-                preserved.
-              </p>
-            </div>
-
-            <div onClick={() => HandleLink('linkedin')} className="a-btn">
-              <Button className="a-unactive">Pause account</Button>
-            </div>
-          </div>
-
-          <div className="act" id="accs">
-            <div className="a-img-text" id="left-actions">
-              <p className="a-icon-name">Delete account</p>
-              <p className="a-text">
-                Permanently delete your account, including all personal
-                information and immersion progress from <br />
-                Netlearn. This action is irreversible and will terminate access,
-                remove all data, and clear your personal <br />
-                information from our system.
-              </p>
-            </div>
-            <div onClick={() => HandleLink('linkedin')} className="a-btn">
-              <Button className="delete-btn">Delete account</Button>
             </div>
           </div>
         </div>

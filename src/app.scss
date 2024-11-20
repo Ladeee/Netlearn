@@ -56,6 +56,7 @@ Button {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  font-size: 1rem !important;
 
   @media (max-width: 760px) {
     width: 19.4375rem /* 311px -> 19.4375rem */ !important;
@@ -129,7 +130,33 @@ Button {
 }
 
 .ant-form-item{
+  margin-bottom: 0;
   @media (max-width: 760px) {
     margin-bottom: .75rem !important;
   }
+}
+
+.ant-col{
+  min-height: unset !important;
+}
+
+// .ant-input-group-addon{
+//   border: .0625rem solid #EAEBED !important;
+//   background-color:#FEFEFE !important;
+// }
+
+.ant-input-affix-wrapper {
+  background-color: #F8F9FA;
+  color: #6B7280;
+  border: .0625rem solid #EAEBED;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-input-affix-wrapper .ant-input-prefix {
+  border-right: .0625rem solid #D1D3D8;
+  padding-right: .75rem;
 }

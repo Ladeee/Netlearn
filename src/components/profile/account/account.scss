@@ -1,4 +1,6 @@
 .account-container {
+  padding-left: 2rem;
+  padding-top: 1.5rem;
   .a-heading {
     color: #121212;
     font-weight: 400;
@@ -69,44 +71,13 @@
   }
 
   .a-active {
-    background-color: #eaebed;
-    color: #3b3f46 !important;
+    background-color: #EEEEFE !important;
+    color:#5959F9 !important;
+    border: 0.075rem solid #EEEEFE !important;
   }
 
   .a-unactive {
     color: #5959f9 !important;
     border: 0.075rem solid #5959f9 !important;
-  }
-
-  .account-actions {
-    margin-top: 0.375rem /* 6px -> .375rem */;
-
-    #left-actions {
-      margin-left: unset;
-      width: 45.25rem /* 724px -> 45.25rem */;
-
-      .a-text {
-        white-space: nowrap;
-      }
-    }
-
-    #accs {
-      display: flex;
-      gap: 0.75rem;
-      padding-bottom: 1.25rem;
-    }
-
-    #act-padd {
-      margin-top: 0.75rem;
-    }
-
-    .a-btn {
-      margin-left: unset;
-    }
-  }
-
-  .delete-btn {
-    color: #e32e2e !important;
-    border: 0.075rem solid #e32e2e !important;
   }
 }
