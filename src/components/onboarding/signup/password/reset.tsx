@@ -1,10 +1,12 @@
 import Minus from '../../../../assets/minus.png'
 import Greencheck from '../../../../assets/greencheck.png'
-import { Button, Form, Input } from 'antd'
+import { Button, Card, Form, Input } from 'antd'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Left from '../../../../assets/left-img.png'
+import Right from '../../../../assets/right-img.png'
+import SignupNavbar from '../signupNavbar'
 import '../email/email.scss'
-import Signup from '..'
 
 type FormType = {
   password?: string
@@ -44,9 +46,16 @@ export default function Reset() {
   }
 
   return (
-    <div className="reset-container">
-      <Signup>
-        <div className="individual-container">
+    <div className="container">
+      <div className="background-img">
+        <img src={Left} alt="left background img" className="left-img" />
+        <img src={Right} alt="right background img" className="right-img" />
+      </div>
+      <div className="bar-background">
+        <SignupNavbar />
+      </div>
+      <div className="sigin-login">
+        <Card className="individual-wrapper" id="card">
           <h2 className="ind-heading">Reset your Password</h2>
 
           <Form className="ind-form" onFinish={handleFinish}>
@@ -124,8 +133,8 @@ export default function Reset() {
           <Link to="/welcome" className="link">
             <p className="login">Back to Login</p>
           </Link>
-        </div>
-      </Signup>
+        </Card>
+      </div>
     </div>
   )
 }

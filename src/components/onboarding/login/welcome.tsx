@@ -1,7 +1,9 @@
-import { Button, Checkbox, Form, Input } from 'antd'
-import '../signup/email/email.scss'
+import { Button, Card, Checkbox, Form, Input } from 'antd'
 import { Link } from 'react-router-dom'
-import Signup from '../signup'
+import Left from '../../../assets/left-img.png'
+import Right from '../../../assets/right-img.png'
+import '../signup/email/email.scss'
+import SignupNavbar from '../signup/signupNavbar'
 
 type FormType = {
   email?: string
@@ -14,9 +16,16 @@ export default function Welcome() {
   }
 
   return (
-    <div className="welcome-container">
-      <Signup>
-        <div className="individual-container">
+    <div className="container">
+      <div className="background-img">
+        <img src={Left} alt="left background img" className="left-img" />
+        <img src={Right} alt="right background img" className="right-img" />
+      </div>
+      <div className="bar-background">
+        <SignupNavbar />
+      </div>
+      <div className="sigin-login">
+        <Card className="individual-wrapper" id="card">
           <h2 className="ind-heading">Log in to Netlearn</h2>
 
           <Form className="ind-form" onFinish={handleFinish}>
@@ -53,8 +62,8 @@ export default function Welcome() {
               </Button>
             </Form.Item>
           </Form>
-        </div>
-      </Signup>
+        </Card>
+      </div>
     </div>
   )
 }

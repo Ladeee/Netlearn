@@ -2,9 +2,10 @@ import SignupNavbar from './signupNavbar'
 import Left from '../../../assets/left-img.png'
 import Right from '../../../assets/right-img.png'
 import { Card } from 'antd'
+import Netlearn from './email/netlearn'
 import './signup.scss'
 
-export default function Signup({children}: any) {
+export default function Signup() {
   return (
     <div className="container">
       <div className="background-img">
@@ -15,7 +16,7 @@ export default function Signup({children}: any) {
 
       <div className="signup-container">
         <Card className="individual-wrapper" id="card">
-          {children}
+          <Netlearn />
         </Card>
       </div>
     </div>

@@ -12,17 +12,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
+
+  @media (max-width: 760px) {
+    height: 2.9844rem /* 47.75px -> 2.9844rem */;
+    margin-top: 2.25rem /* 36px -> 2.25rem */;
+  }
 }
 
 .lattice-logo {
   width: 12.5919rem /* 201.47px -> 12.5919rem */;
   height: 4.4212rem /* 70.74px -> 4.4212rem */;
-  margin-top: 1.5rem;
 
   @media (max-width: 760px) {
     width: 8.5rem /* 136px -> 8.5rem */;
     height: 2.9844rem /* 47.75px -> 2.9844rem */;
-    margin-top: 2.25rem /* 36px -> 2.25rem */;
+    // margin-top: 2.25rem /* 36px -> 2.25rem */;
   }
 }
 
@@ -87,6 +92,10 @@
   align-items: flex-start;
   gap: 0.75rem;
   margin-top: 1.25rem;
+
+  @media (max-width: 760px) {
+    margin-top: 1rem;
+  }
 
   .checkbox .ant-checkbox-inner {
     display: flex !important;
