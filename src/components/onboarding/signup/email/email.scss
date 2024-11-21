@@ -212,6 +212,7 @@
 
   @media (max-width: 760px) {
     margin-bottom: 0.75rem;
+    margin-top: 0;
   }
 }
 
@@ -248,7 +249,7 @@
   margin-top: 1.25rem;
 
   @media (max-width: 760px) {
-    margin-top: 1rem;
+    margin-top: 0.25rem /* 4px -> .25rem */;
   }
 
   .checkbox {
@@ -330,7 +331,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.25rem;
+  margin-top: 0.5rem /* 8px -> .5rem */;
 
   .remember {
     display: flex;
@@ -348,7 +349,7 @@
     font-weight: 400;
 
     @media (max-width: 760px) {
-      font-size: .875rem;
+      font-size: 0.875rem;
     }
   }
 }
@@ -385,7 +386,31 @@
   font-size: 1rem;
 
   @media (max-width: 760px) {
-    margin-top: 1rem;
-    font-size: .9375rem /* 15px -> .9375rem */;
+    margin-top: 0.25rem /* 4px -> .25rem */;
+    font-size: 0.9375rem /* 15px -> .9375rem */;
+  }
+}
+
+.sigin-login {
+  display: flex;
+  justify-content: center;
+}
+
+.bar-background {
+  @media (max-width: '760px') {
+    background-color: #fefefe;
+  }
+}
+
+.agree-checkbox .ant-checkbox .ant-checkbox-inner {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  border: 0.0938rem solid #d0d5dd !important;
+  border-radius: 0.25rem /* 4px -> .25rem */;
+
+  @media (max-width: '760px') {
+    width: 1rem !important;
+    height: 1rem !important;
+    border: .075rem solid #d0d5dd !important;
   }
 }

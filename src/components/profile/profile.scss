@@ -2,6 +2,11 @@
 .profile-container {
   padding-top: 1.5rem;
 
+  .p-scroll{
+    overflow-y: scroll;
+    height: 31.5rem /* 504px -> 31.5rem */;
+  }
+
   .photo-text {
     padding-left: 2rem;
   }
@@ -104,6 +109,7 @@
     padding-left: 2rem;
     font-size: .875rem;
     margin-top: 1.5rem;
+    margin-bottom: 1rem;
 
     .member {
       color: #121212;
@@ -124,7 +130,6 @@
     justify-content: flex-end;
     align-items: center;
     padding-right: 3.25rem /* 52px -> 3.25rem */;
-    margin-top: 1rem;
 
     .p-btn {
       background-color: #5151e3;

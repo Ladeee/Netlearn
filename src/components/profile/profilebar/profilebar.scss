@@ -1,14 +1,13 @@
+
+
 .profilebar-wrapper {
   background-color: #f8f9f9;
   padding-top: 1.5rem;
   padding-left: 2rem;
   padding-right: 2.25rem /* 36px -> 2.25rem */;
-  border-bottom: .0625rem solid #E0E1E4
-}
-
-.profile-display {
-  // margin-top: 1.5rem;
-  // padding-left: 2rem;
+  border-bottom: .0625rem solid #E0E1E4;
+  border-top-left-radius : 1.125rem /* 18px -> 1.125rem */;
+  border-top-right-radius : 1.125rem /* 18px -> 1.125rem */;
 }
 
 .switch-text {

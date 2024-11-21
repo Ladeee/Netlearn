@@ -4,6 +4,7 @@ import Menu from '../../../assets/menu.png'
 import '../signup/signup.scss'
 
 export default function SignupNavbar() {
+
   return (
     <div className="logo-container">
       <img src={Logo} alt="signup logo" className="signup-logo" />

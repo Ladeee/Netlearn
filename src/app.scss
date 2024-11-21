@@ -136,6 +136,18 @@ Button {
   }
 }
 
+.ant-row {
+  @media (max-width: 760px) {
+  display: block !important;
+  }
+}
+
+.ant-row {
+  @media (max-width: 760px) {
+  display: block !important;
+  }
+}
+
 .ant-col{
   min-height: unset !important;
 }

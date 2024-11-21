@@ -1,10 +1,9 @@
 import Minus from '../../../../assets/minus.png'
 import Greencheck from '../../../../assets/greencheck.png'
 import { Button, Checkbox, Form, Input, Select } from 'antd'
-import './email.scss'
 import { useState } from 'react'
 import Lattice from './lattice'
-import Signup from '..'
+import './email.scss'
 
 type FormType = {
   firstName?: string
@@ -53,7 +52,6 @@ export default function Netlearn() {
 
   return (
     <>
-      <Signup>
         <div className="individual-container">
           <h2 className="ind-heading">
             {!switchStep ? 'Welcome to Netlearn' : 'Connect to Lattice'}
@@ -203,7 +201,6 @@ export default function Netlearn() {
             <Lattice />
           )}
         </div>
-      </Signup>
     </>
   )
 }

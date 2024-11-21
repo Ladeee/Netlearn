@@ -1,7 +1,9 @@
-import { Button, Form, Input } from 'antd'
+import { Button, Card, Form, Input } from 'antd'
 import { Link, useNavigate } from 'react-router-dom'
-import Signup from '..'
+import Left from '../../../../assets/left-img.png'
+import Right from '../../../../assets/right-img.png'
 import '../email/email.scss'
+import SignupNavbar from '../signupNavbar'
 
 type FormType = {
   email?: string
@@ -16,9 +18,16 @@ export default function Forgot() {
   }
 
   return (
-    <div className="forgot-container">
-      <Signup>
-        <div className="individual-container">
+    <div className="container">
+      <div className="background-img">
+        <img src={Left} alt="left background img" className="left-img" />
+        <img src={Right} alt="right background img" className="right-img" />
+      </div>
+      <div className="bar-background">
+        <SignupNavbar />
+      </div>
+      <div className="sigin-login">
+        <Card className="individual-wrapper" id="card">
           <h2 className="ind-heading">Forgot your Password</h2>
           <p className="ind-text" id="not-mobile">
             Simply enter the email address associated with your account and
@@ -43,8 +52,8 @@ export default function Forgot() {
           <Link to="/welcome" className="link">
             <p className="login">Back to Login</p>
           </Link>
-        </div>
-      </Signup>
+        </Card>
+      </div>
     </div>
   )
 }

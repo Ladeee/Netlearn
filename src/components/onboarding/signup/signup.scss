@@ -109,3 +109,27 @@
     z-index: 1;
   }
 }
+
+// profile popup
+.popup-display {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0E0E0EA6;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 760px) {
+    display: none;
+  }
+}
+
+.show-popup{
+  background-color: #fefefe;
+  width: 60.625rem /* 970px -> 60.625rem */;
+  height: 44.4375rem /* 711px -> 44.4375rem */;
+  border-radius: 1.125rem /* 18px -> 1.125rem */;
+}
