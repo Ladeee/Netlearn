@@ -8,6 +8,7 @@ import Reset from './components/onboarding/signup/password/reset'
 import Netlearn from './components/onboarding/signup/email/netlearn'
 import './app.scss'
 import Signup from './components/onboarding/signup'
+import Dashboard from './components/dashboard/dashboard'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <Route path="/netlearn" element={<Netlearn />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/forgot" element={<Forgot />} />
-          {/* <Route path="/trial" element={<Trial />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
           {/* <Route path="/demo" element={<Demo />} /> */}
           {/* <Route path="/payment" element={<Payment />} /> */}
           <Route path="/reset" element={<Reset />} />

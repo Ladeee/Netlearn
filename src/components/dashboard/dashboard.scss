@@ -1,0 +1,75 @@
+.dashboard-container {
+  .skills-act {
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 21.75rem /* 348px -> 21.75rem */;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-top: 0.9375rem /* 15px -> .9375rem */;
+    padding-left: 4rem;
+
+    p {
+      cursor: pointer;
+    }
+
+    .skill-border {
+      color: #5959f9;
+      font-weight: 500;
+      border-bottom: 0.3125rem solid #5959f9;
+      width: 10.5625rem /* 169px -> 10.5625rem */;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  // dash-welcome
+  .dash-welcome {
+    background-color: #f4f4fe;
+    padding-left: 2rem;
+  }
+
+  .d-welcome-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 0.445rem /* 7.12px -> .445rem */;
+
+    .bulb {
+      width: 28.18rem /* 450.88px -> 28.18rem */;
+      height: 22.5888rem /* 361.42px -> 22.5888rem */;
+    }
+
+    .welcome-texts {
+      .welcome-back {
+        color: #3b3f46;
+        font-weight: 400;
+        font-size: 1.875rem /* 30px -> 1.875rem */;
+      }
+
+      span {
+        font-weight: 600;
+      }
+
+      .explore-btn {
+        background: #5151e3 !important;
+        color: #FEFEFE !important;
+        width: 18.1875rem /* 291px -> 18.1875rem */ !important;
+        height: 2.875rem /* 46px -> 2.875rem */ !important;
+        font-weight: 400 !important;
+        font-size: 1.125rem !important;
+        margin-top: 1.4375rem /* 23px -> 1.4375rem */;
+      }
+    }
+
+    .master {
+      white-space: nowrap;
+      color: #4c515b;
+      font-weight: 400;
+      font-size: 1.125rem;
+      margin-top: 0.625rem;
+      line-height: 1.75rem /* 28px -> 1.75rem */;
+    }
+  }
+}
