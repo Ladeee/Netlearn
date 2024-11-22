@@ -8,7 +8,7 @@ body {
   font-family: 'Outfit', sans-serif;
 
   @media (min-width: 760px) and (max-width: 2000px) {
-    font-size: 1.1111vw /* 16px -> .8333vw */;
+    font-size: 0.8333vw /* 16px -> .8333vw */;
     /* font-size: 16px; */
   }
 }
@@ -151,6 +151,11 @@ Button {
 .ant-col{
   min-height: unset !important;
 }
+
+// .ant-input-group-addon{
+//   border: .0625rem solid #EAEBED !important;
+//   background-color:#FEFEFE !important;
+// }
 
 .ant-input-affix-wrapper {
   background-color: #F8F9FA;
