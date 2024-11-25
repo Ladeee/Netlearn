@@ -1,0 +1,42 @@
+.charts{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.bar-charts{
+  border: .0625rem solid #EAEBED;
+  width: 55.5rem /* 888px -> 55.5rem */;
+  height: 25.625rem /* 410px -> 25.625rem */;
+  border-radius: .75rem;
+}
+
+.pie-charts{
+  position: relative;
+  border: .0625rem solid #EAEBED;
+  width: 25rem /* 400px -> 25rem */;
+  height: 25.625rem /* 410px -> 25.625rem */;
+  border-radius: .75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pie-course{
+  position: absolute;
+  top: 55%;
+
+  .five{
+    color: #121212;
+    font-size: 2.1406rem /* 34.25px -> 2.1406rem */;
+  }
+
+  .course{
+    color: #4C515B;
+    font-weight: 400;
+    font-size: 1.1419rem /* 18.27px -> 1.1419rem */;
+  }
+}
