@@ -1,0 +1,210 @@
+// profile
+.profile-container {
+  padding-top: 1.5rem;
+
+  .p-scroll{
+    overflow-y: scroll;
+    height: 31.5rem /* 504px -> 31.5rem */;
+  }
+
+  .photo-text {
+    padding-left: 2rem;
+  }
+
+  .selected{
+    position: relative;
+
+    .img-input{
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      input{
+        cursor: pointer;
+        width: 8.125rem /* 130px -> 8.125rem */ !important;
+        height: 8.125rem /* 130px -> 8.125rem */ !important;
+        border-radius: 50% !important;
+        border: none !important;
+        background-color: transparent !important;
+        opacity: 0;
+      }  
+    }
+
+  }
+
+  .click-photo {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.5rem /* 8px -> .5rem */;
+    padding-left: 2rem;
+  }
+
+  .click {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .photo {
+    cursor: pointer;
+    width: 8.125rem /* 130px -> 8.125rem */;
+    height: 8.125rem /* 130px -> 8.125rem */;
+    border-radius: 50%;
+  }
+
+  .upload {
+    cursor: pointer;
+    color: #5959f9;
+    text-decoration: underline;
+  }
+
+  .svg {
+    color: #6b7280;
+  }
+
+  .p-form {
+    margin-top: 1.25rem;
+  }
+
+  .p-input-display {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .down-label {
+    color: #6b7280;
+    font-weight: 300;
+    font-size: 0.875rem;
+    margin-top: 0.5rem /* 8px -> .5rem */;
+  }
+
+  .social-display {
+    Input {
+      height: 3rem !important;
+    }
+  }
+  
+  .social {
+    color: #121212;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    padding-left: 2rem;
+  }
+
+  #p-hr {
+    border-bottom: 0.0625rem solid #e0e1e4;
+    padding-bottom: 1.5rem;
+    width: 55.375rem /* 886px -> 55.375rem */;
+    padding-left: 2rem;
+  }
+
+  #p-padding {
+    padding-left: 2rem;
+  }
+
+  .member-display {
+    padding-left: 2rem;
+    font-size: .875rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+
+    .member {
+      color: #121212;
+      font-weight: 500;
+    }
+
+    .p-date{
+      color:#4C515B;
+      font-weight: 400;
+    }
+  }
+
+  .p-btn-display {
+    box-shadow: 0rem 0.1875rem 0.5rem -0.0625rem #3232470d,
+      0rem 0rem 0.0625rem 0rem #0c1a4b3d;
+    height: 5.25rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3.25rem /* 52px -> 3.25rem */;
+
+    .p-btn {
+      background-color: #5151e3;
+      width: 11.25rem /* 180px -> 11.25rem */;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+}
+
+// email-password
+.empass-container {
+  .ant-form-item .ant-form-item-label > label {
+    color: #4c515b !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+  }
+
+  .em-input-display {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .p-form-item {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.625rem;
+    margin-right: 3.25rem /* 52px -> 3.25rem */;
+
+    Button {
+      background-color: #5151e3;
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+      margin-top: 2rem;
+      width: 11.25rem /* 180px -> 11.25rem */ !important;
+      height: 2.75rem /* 44px -> 2.75rem */ !important;
+    }
+  }
+
+  #p-border {
+    width: 55.375rem /* 886px -> 55.375rem */;
+    // padding-bottom: 1.5rem;
+  }
+
+  .empass-wrapper {
+    height: 23.9375rem /* 383px -> 23.9375rem */;
+    overflow-y: scroll;
+    box-shadow: 0rem 0.1875rem 0.5rem -0.0625rem #3232470d,
+      0rem 0rem 0.0625rem 0rem #0c1a4b3d;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 5.3125rem /* 85px -> 5.3125rem */;
+  }
+
+  #change-pass {
+    margin-top: 1.5rem;
+  }
+
+  .p-forgot {
+    color: #7a7afa;
+    margin-top: 0.625rem;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .change {
+    color: #121212;
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.profile-input {
+  width: 27.0625rem /* 433px -> 27.0625rem */ !important;
+}
