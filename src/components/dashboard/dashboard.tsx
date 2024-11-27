@@ -3,8 +3,6 @@ import Illustration from '../../assets/illustration.png'
 import Star from '../../assets/star.png'
 import Sstar from '../../assets/s-star.png'
 import Circle from '../../assets/circle.png'
-
-import DashNavbar from './dashnavbar'
 import './dashboard.scss'
 import { Button } from 'antd'
 import Feedback from './feedback'
@@ -19,7 +17,7 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-container">
-      <DashNavbar />
+      {/* <DashNavbar /> */}
       <div className="skills-act">
         <p
           className={`${switchSkills === 'skills' && 'skill-border'}`}

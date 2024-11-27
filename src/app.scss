@@ -7,7 +7,7 @@ body {
   font-weight: 500;
   font-family: 'Outfit', sans-serif;
 
-  @media (min-width: 760px) and (max-width: 2000px) {
+  @media  (max-width: 2000px) {
     font-size: 1.11vw /* 16px -> .8333vw */;
     /* font-size: 16px; */
   }

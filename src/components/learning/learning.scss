@@ -1,0 +1,192 @@
+.learning-container {
+  margin-top: 0.9375rem /* 15px -> .9375rem */;
+}
+
+  .cour-ins {
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+    gap: 0.75rem;
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding-left: 4rem;
+
+    p {
+      cursor: pointer;
+      border-bottom: .3125rem solid #fefefe;
+      padding-bottom: .5rem;
+    }
+
+    .cour-ins-border{
+      color: #5959F9;
+      border-bottom: .3125rem solid #5959F9;
+      padding-bottom: .5rem;
+    }
+  }
+
+  .explore {
+    background-color: #121212;
+    padding-top: 2rem;
+    padding-left: 4rem;
+
+    .exp-heading {
+      color: #fefefe;
+      font-weight: 500;
+      font-size: 1.875rem /* 30px -> 1.875rem */;
+    }
+
+    .exp-text {
+      color: #d1d3d8;
+      font-weight: 400;
+      font-size: 1.125rem;
+      margin-top: 0.625rem;
+    }
+
+    .exp-choices {
+      color: #aaadb3;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 400;
+      font-size: 1.125rem;
+      margin-top: 3.1875rem /* 51px -> 3.1875rem */;
+
+      p {
+        white-space: nowrap;
+        cursor: pointer;
+        border-bottom: .3125rem solid #000000;
+        padding-bottom: .625rem;
+        width: 6.0625rem /* 97px -> 6.0625rem */;
+        text-align: center;
+      }
+
+      .play-choice{
+        color: #fefefe;
+        font-weight: 500;
+        border-bottom: .3125rem solid #fefefe;
+        padding-bottom: .625rem;
+      }
+    }
+  }
+
+  .exp-wrapper {
+    padding: 0 4rem;
+  }
+
+  .recommended {
+    margin-top: 1.5rem;
+
+    .rec {
+      color: #000000;
+      font-weight: 500;
+      font-size: 1.875rem /* 30px -> 1.875rem */;
+    }
+
+    .rec-display {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+
+      .dot-text {
+        color: #4c515b;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+
+        .dot {
+          width: 0.625rem /* 10px -> .625rem */;
+          height: 0.625rem /* 10px -> .625rem */;
+          border-radius: 50%;
+        }
+
+        #lean {
+          background-color: #188c43;
+        }
+
+        #develop {
+          background: var(--Develop, #e35a28);
+        }
+
+        #explore {
+          background-color: #de900b;
+        }
+
+        #others {
+          background-color: #c9cbd1;
+        }
+      }
+
+      .help {
+        width: 0.875rem;
+        height: 0.875rem;
+      }
+    }
+  }
+
+  .all-lessons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-bottom: 0.0625rem solid #eaebed;
+    padding-bottom: 1.25rem;
+
+    .choice{
+      background-color: #E9E9E9;
+      color: #2D3036;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 7.5rem /* 120px -> 7.5rem */;
+      height: 2.25rem /* 36px -> 2.25rem */;
+      border-radius: 3rem;
+    }
+
+    .track {
+      color: #616874;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 400;
+      font-size: 1.125rem;
+
+      p {
+        cursor: pointer;
+      }
+    }
+
+  }
+  .options {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 31.9375rem /* 511px -> 31.9375rem */;
+
+    Button {
+      background-color: #ffffff !important;
+      color: #3b3f46 !important;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 0.05rem /* 0.8px -> .05rem */ solid #e0e1e4 !important;
+      padding: 0.625rem !important;
+      height: 2.75rem /* 44px -> 2.75rem */ !important;
+      font-weight: 400 !important;
+      font-size: 1rem !important;
+
+      .arrow {
+        font-size: 0.75rem;
+      }
+
+      .filter {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+  .learning-boxes {
+    margin-top: 1.5rem;
+  }

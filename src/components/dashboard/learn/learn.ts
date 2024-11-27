@@ -1,6 +1,8 @@
 export const options: Highcharts.Options = {
   chart: {
-    type: 'column', // Vertical bar chart
+    type: 'column',
+    height: 265,
+    animation: false,
   },
   title: {
     text: undefined,
@@ -19,32 +21,43 @@ export const options: Highcharts.Options = {
       'Oct 28-31',
     ],
     title: {
-      text: null, // No title for X-axis
+      text: null,
     },
   },
   yAxis: {
-    categories: ['0', '30m', '1h', '2h', '3h', '4h', '5h', '6h'], // Predefined Y-axis labels
+    categories: ['0', '30m', '1h', '2h', '3h', '4h', '5h', '6h'],
     title: {
-      text: 'Skill Levels', // Title for the Y-axis
+      text: null,
+    },
+  },
+  plotOptions: {
+    column: {
+      pointWidth: 53,
+      pointPadding: 0, // Reduce padding between bars
+      groupPadding: 0, // Reduce group padding
+      borderWidth: 0, // Remove border for clean appearance
+    },
+    series: {
+      marker: {
+        enabled: false,
+      },
     },
   },
   tooltip: {
-    formatter: function () {
-      return `<b>${this.x}</b>: ${this.y}`
-    },
+    enabled: false,
+  },
+  credits: {
+    enabled: false,
   },
   series: [
     {
-      name: 'Proficiency',
       type: 'column',
-      data: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], // Data values corresponding to each category
-      color: '#EEEEFE', // Color of the bars
+      data: [0, 1, 2, 3, 4, 5, 6, 7],
+      color: '#EEEEFE',
     },
+    
   ],
-  credits: {
-    enabled: false, // Removes the Highcharts credit label
-  },
-}
+};
 
 export const pie: Highcharts.Options = {
   chart: {
@@ -57,7 +70,7 @@ export const pie: Highcharts.Options = {
     enabled: false,
   },
   accessibility: {
-    enabled: false, // Disables accessibility features
+    enabled: false,
   },
   plotOptions: {
     pie: {
@@ -85,3 +98,77 @@ export const pie: Highcharts.Options = {
     enabled: false,
   },
 }
+
+export const personInfo = [
+  {
+    id: 1,
+    name: 'Lucy Thindle',
+    occupation: 'Finance manager',
+    text: 'Kicking off a project the right way',
+    date: '6 days ago',
+    likes: '100',
+  },
+  {
+    id: 2,
+    name: 'Lucy Thindle',
+    occupation: 'Finance manager',
+    text: 'Kicking off a project the right way',
+    date: '6 days ago',
+    likes: '100',
+  },
+  {
+    id: 3,
+    name: 'Lucy Thindle',
+    occupation: 'Finance manager',
+    text: 'Kicking off a project the right way',
+    date: '6 days ago',
+    likes: '100',
+  },
+  {
+    id: 4,
+    name: 'Lucy Thindle',
+    occupation: 'Finance manager',
+    text: 'Kicking off a project the right way',
+    date: '6 days ago',
+    likes: '100',
+  },
+  {
+    id: 5,
+    name: 'Lucy Thindle',
+    occupation: 'Finance manager',
+    text: 'Kicking off a project the right way',
+    date: '6 days ago',
+    likes: '100',
+  },
+]
+
+export const courses = [
+  {
+    id: 1,
+    title: 'The effectiveness of AI in our daily lives',
+    author: 'By Peter Smart & Lucy Thindle',
+    skill: 'Skill area:',
+    area: 'Project planning (Technical), Effective Delegation(Leadership)',
+  },
+  {
+    id: 2,
+    title: 'The effectiveness of AI in our daily lives',
+    author: 'By Peter Smart & Lucy Thindle',
+    skill: 'Skill area:',
+    area: 'Project planning (Technical), Effective Delegation(Leadership)',
+  },
+  {
+    id: 3,
+    title: 'The effectiveness of AI in our daily lives',
+    author: 'By Peter Smart & Lucy Thindle',
+    skill: 'Skill area:',
+    area: 'Project planning (Technical), Effective Delegation(Leadership)',
+  },
+  {
+    id: 4,
+    title: 'The effectiveness of AI in our daily lives',
+    author: 'By Peter Smart & Lucy Thindle',
+    skill: 'Skill area:',
+    area: 'Project planning (Technical), Effective Delegation(Leadership)',
+  },
+]
