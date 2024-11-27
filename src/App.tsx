@@ -8,7 +8,7 @@ import Reset from './components/onboarding/signup/password/reset'
 import Netlearn from './components/onboarding/signup/email/netlearn'
 import './app.scss'
 import Signup from './components/onboarding/signup'
-import Dashboard from './components/dashboard/dashboard'
+// import Dashboard from './components/dashboard/dashboard'
 import DashNavbar from './components/dashboard/dashnavbar'
 
 function App() {
